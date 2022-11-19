@@ -20,7 +20,6 @@ const Navbar = () => {
             <Menu />
             <div className=" bg-white h-[1px] w-[80%] my-[0.5rem] bg-gray-300"/>
             <SecondMenu />
-
         </div>
 
 
