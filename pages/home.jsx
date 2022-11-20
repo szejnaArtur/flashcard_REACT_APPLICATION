@@ -3,7 +3,7 @@ import background from "../assets/wallpaper.jpg";
 import Navbar from "../components/navbar/Navbar";
 import React from "react";
 
-const home = () => {
+const Home = () => {
     return(
         <>
             <div className="fixed h-screen flex z-1">
@@ -17,3 +17,4 @@ const home = () => {
         </>
     )
 }
+export default Home;

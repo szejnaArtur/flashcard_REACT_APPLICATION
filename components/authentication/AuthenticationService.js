@@ -3,6 +3,7 @@ import axios from 'axios';
 import {API_URL} from "../../Constans";
 
 export const USER_NAME_SESSION_ATTRIBUTE_NAME = 'authenticatedUser';
+export const USER_NAME_SESSION_ATTRIBUTE_TOKEN = 'token';
 
 class AuthenticationService {
 
@@ -19,6 +20,7 @@ class AuthenticationService {
 
     registerSuccessfulLoginForJwt(username, token) {
         sessionStorage.setItem(USER_NAME_SESSION_ATTRIBUTE_NAME, username);
+        sessionStorage.setItem(USER_NAME_SESSION_ATTRIBUTE_TOKEN, token);
         this.setupAxiosInterceptors(this.createJwtToken(token));
     }
 
