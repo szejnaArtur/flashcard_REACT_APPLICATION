@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import AuthenticationService from "../../authentication/AuthenticationService";
 import {useRouter} from "next/router";
-import SimpleToastSuccess from "../../toast/SimpleToastSuccess.jsx";
-import SimpleToastFail from "../../toast/SimpleToastFail.jsx";
+import SimpleToastSuccess from "../../ui/toasts/SimpleToastSuccess.jsx";
+import SimpleToastFail from "../../ui/toasts/SimpleToastFail.jsx";
 
 const LoginPage = ({click}) => {
 

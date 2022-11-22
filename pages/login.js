@@ -1,13 +1,8 @@
-import React, {useState} from "react";
-
-// @ts-ignore
-import LoginPage from '../components/auth/form/LoginPage.jsx';
-// @ts-ignore
-import Dashboard from '../components/Dashboard.jsx';
-
+import React, {useState} from 'react';
 import AuthenticationService from "../components/authentication/AuthenticationService";
+import LoginPage from "../components/auth/form/LoginPage";
 
-export default function Home() {
+function login() {
 
     const [isUserLoggedIn, setIsUserLoggedIn] = useState(AuthenticationService.isUserLoggedIn());
 
@@ -17,3 +12,5 @@ export default function Home() {
         </div>
     )
 }
+
+export default login;

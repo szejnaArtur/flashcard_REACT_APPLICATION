@@ -1,18 +1,16 @@
 import Image from "next/image";
 import background from "../assets/wallpaper.jpg";
-import Navbar from "../components/navbar/Navbar";
+import Menu from "../components/menu/MenuComponent";
 import React from "react";
 
 const Home = () => {
-    return(
+    return (
         <>
             <div className="fixed h-screen flex z-1">
-                <Image src={background}  alt=""/>
+                <Image src={background} alt=""/>
             </div>
             <div className="absolute z-10 top-[2%] left-[2%]">
-                <div className="flex justify-center items-center">
-                    <Navbar />
-                </div>
+                <Menu/>
             </div>
         </>
     )
